@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="ISO-8859-1">
+<title>List</title>
+<link href="/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+<h1 align="center">Registered Consumer Records</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+     <th scope="col">S.No</th>
+      <th scope="col">Phone</th>
+      <th scope="col">First-Name</th>
+      <th scope="col">Last-Name</th>
+      <th scope="col">Date-Of-Birth</th>
+      <th scope="col">User-Name</th>
+      <th scope="col">User-Password</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  th:each ="con, it : ${consumerlist}">
+      <td   scope="row" th:text="${it.index+1}">xxx</td>   
+      <td th:text="${con.phone}">xxx</td>
+     <td th:text="${con.firstname}">xxx</td>
+      <td th:text="${con.lastname}">xxx</td>
+     <td th:text="${con.dateofbirth}">xxx</td>
+     <td th:text="${con.email}">xxx</td>
+      <td th:text="${con.username}">xxx</td>
+       <td th:text="${con.password}">xxx</td>
+    </tr>
+   
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

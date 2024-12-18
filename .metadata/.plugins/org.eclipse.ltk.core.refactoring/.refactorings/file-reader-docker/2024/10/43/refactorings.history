@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Dockerfile&apos; to &apos;file-reader-docker&apos;" description="Move &apos;Dockerfile&apos; to &apos;file-reader-docker&apos;" destination="/file-reader-docker" element1="target/Dockerfile" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1729689625630" updateReferences="true"/>
+</session>

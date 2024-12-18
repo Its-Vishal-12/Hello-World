@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Iteration</title>
+<link th:href="@{/css/bootstrap.min.css}"  rel="stylesheet"/>
+</head>
+<body>
+
+<h1 align="center">ITERATION</h1>
+<h4 align="center">Employee Records</h4>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+     <th scope="col">S.No</th>
+      <th scope="col">Employee Id</th>
+      <th scope="col">First-Name</th>
+      <th scope="col">Last-Name</th>
+      <th scope="col">Date-Of-Birth</th>
+      <th scope="col">Current Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  th:each ="emp, it : ${List}">
+      <td   scope="row" th:text="${it.index+1}">xxx</td>   
+      <td th:text="${emp.Id}">xxx</td>
+     <td th:text="${emp.firstName}">xxx</td>
+      <td th:text="${emp.lastName}">xxx</td>
+     <td th:text="${emp.date}">xxx</td>
+     <td th:text="${emp.currentdate}">xxx</td>
+    </tr>
+   
+  </tbody>
+</table>
+
+<script th:src="@{/js/bootstrap.min.js}"></script>
+
+
+</body>
+</html>

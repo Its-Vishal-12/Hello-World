@@ -1,0 +1,15 @@
+package com.Spring.ExceptionFound;
+
+public class NotFound  extends RuntimeException {
+	
+	 private String msg;
+	
+	public NotFound(){
+		
+	}
+	
+	 public NotFound(String msg){
+		
+	}
+
+}

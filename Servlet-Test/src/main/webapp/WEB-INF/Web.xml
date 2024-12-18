@@ -1,0 +1,32 @@
+<!--This XML file does not appear to have any style information associated with it. The document tree is shown below.-->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+<display-name>Practice</display-name>
+<welcome-file-list>
+<welcome-file>Welcome.html</welcome-file>
+</welcome-file-list>
+<!--  
+    <servlet>
+	<servlet-name>Hello</servlet-name>
+    <servlet-class>com.Testservlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+     </servlet>
+     
+     <servlet-mapping>
+	<servlet-name>Hello</servlet-name>	 
+	<url-pattern>/Practice1.com</url-pattern>	 
+	</servlet-mapping>
+    
+    <servlet>
+	<servlet-name>Best</servlet-name>
+    <servlet-class>com.Bestservlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+     </servlet>
+     
+     <servlet-mapping>
+	<servlet-name>Best</servlet-name>	 
+	<url-pattern>/Practice2.com</url-pattern>	 
+	</servlet-mapping>
+    
+     -->
+</web-app>
+

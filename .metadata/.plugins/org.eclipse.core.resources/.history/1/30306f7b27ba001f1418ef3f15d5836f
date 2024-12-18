@@ -1,0 +1,5 @@
+package com.Spring.QueryHinter.Services;
+
+public interface QueryService {
+
+}

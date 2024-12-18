@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"  >
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome To Employee List</h1>
+<h4>Given Below Employee List:</h4>
+<br>
+
+<div>
+<h4>SIMPLE VARIABLE</h4>
+Employee ID:  
+  <span  th:text=" ${Employee.Id}" > 000 </span>
+<br>
+First Name:      <span  th:text="${Employee.firstName}">xxx  </span>
+<br>
+Last Name:      <span th:text="${Employee.lastName}"> xxx   </span>
+<br>
+Date Of Birth:      <span th:text="${Employee.date}"> xxx   </span>
+<br>
+Current Date:      <span  th:text="${Employee.currentdate}"> xxx   </span>
+</div>
+
+
+
+<div   th:Object="${Employee}">
+<h4>SELECTION VARIABLE</h4>
+Employee ID:  
+  <span  th:text=" *{Id}" > 000 </span>
+<br>
+First Name:      <span  th:text="*{firstName}">xxx  </span>
+<br>
+Last Name:      <span th:text="*{lastName}"> xxx   </span>
+<br>
+Date Of Birth:      <span th:text="*{date}"> xxx   </span>
+<br>
+Current Date:      <span  th:text="*{currentdate}"> xxx   </span>
+</div>
+
+
+
+<div>
+<h4>Hyperlink </h4>
+<span> <a   href="*"   th:href="@{/employee/home}">Click here to Home Page</a>                    </span>
+</div>
+
+
+
+
+<h4>MESSAGE PROPERTIES </h4>
+<p> Owner:     <span  th:text="#{owner.Owner.Name}">      Owner  </span></p>
+<p> Designation:     <span  th:text="#{owner.Owner.Designation}"> Designation</span></p>
+
+
+<h4>IF CONDITION</h4>
+
+<div th:text="${Employee.Id=='1214'}?'Poor Salary'">Poor Salary</div>
+<div th:text="${Employee.Id=='1456'}?'Good Salary'">Good Salary</div>
+
+<h4>IF-ELSE CONDITION</h4>
+
+<div th:text="${Employee.Id=='1214'}?'Poor Salary':'Good Salary'"></div>
+
+<div th:text="${Employee.Id=='1114'}?'Poor Salary':'Good Salary'"></div>
+
+<h4>IF - UNLESS</h4>
+
+
+<div th:if="${Employee.Id=='1214'}?'True Salary':'False Salary'">Salary</div>
+
+<div th:if="${Employee.Id=='1114'}?'True Salary':'False Salary'">Salary</div>
+
+
+<h4>SWITCH CASE</h4>
+
+<div th:switch="${Employee.firstName}">
+<p  th:case="Vishal">Hello Vishal</p>
+<p  th:case="Nishu">Hello Nishu</p>
+<p  th:case="Shalini">Hello Shalini</p>
+<p  th:case="Nishi">Hello Nishi</p>
+<p  th:case="*">Default</p>
+</div>
+
+
+
+
+
+</body>
+</html>
